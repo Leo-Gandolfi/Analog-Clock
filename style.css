@@ -7,11 +7,11 @@ body {
     display: flex;
     justify-content: center;
     align-items: center;
-    min-height: 100vh;
     overflow: hidden;
 }
 
 .clock {
+    margin-top: 40px;
     width: 90vh;
     height: 90vh;
     border-radius: 50%;
@@ -125,4 +125,31 @@ body {
     width: 1%;
     height: 45%;
     background-color: rgb(255, 255, 255);opacity: 80%;
+}
+
+@media only screen and (max-width: 720px){
+    .clock{
+        width: 60vh;
+        height: 60vh;
+    }
+
+    .clock .middle{
+        transform: scale(20);
+    }
+}
+
+
+@media only screen and (max-width: 600px){
+    .clock{
+        width: 40vh;
+        height: 40vh;
+
+    }
+    .numbers {
+        font-size: 30px;
+    }
+    .clock .middle{
+        transform: scale(15);
+    }
+
 }
